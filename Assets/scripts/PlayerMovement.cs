@@ -8,5 +8,6 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
         transform.Translate(new Vector2(input.x, input.y) * speed * Time.deltaTime);
+        print("test");
     }
 }
